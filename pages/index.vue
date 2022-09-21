@@ -417,7 +417,7 @@ body{
 
 
 .opacity{
-  opacity: 1
+  opacity: 0
 }
 
 
