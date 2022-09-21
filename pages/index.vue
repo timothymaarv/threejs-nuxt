@@ -388,7 +388,11 @@ export default {
       delay: 2,
       onComplete: () => {
         // window.open("https://www.youtube.com/watch?v=uYuBJtMJIKU", "_blank");
-        this.$router.push('/work')
+        // this.$router.push('/work')
+
+        setTimeout(() => {
+    window.open(url, '_blank');
+}, 300)
       },
     });
   });
