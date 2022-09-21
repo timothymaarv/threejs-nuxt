@@ -387,16 +387,9 @@ export default {
       duration: 1,
       delay: 2,
       onComplete: () => {
-        const url = "https://www.youtube.com/watch?v=uYuBJtMJIKU"
+        // const url = "https://www.youtube.com/watch?v=uYuBJtMJIKU"
 
-        window.location.replace(url)
-
-        // window.open("https://www.youtube.com/watch?v=uYuBJtMJIKU", "_blank");
         this.$router.push('/work')
-
-      //   setTimeout(() => {
-      //    window.open(url, '_blank');
-      // }, 300)
       },
     });
   });
