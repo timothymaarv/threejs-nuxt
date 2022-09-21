@@ -28,7 +28,7 @@ export default {
   const buttonWrap = document.querySelector(".buttonContainer");
   const name = document.querySelector(".name");
   const description = document.querySelector(".description");
-  const gui = new GUI()
+  // const gui = new GUI()
 
   gsap.to(name, {
     opacity: 1,
@@ -54,8 +54,6 @@ export default {
   });
 
   const canvas = document.getElementById("webgl");
-
-
 
   const initialColor = {
     r: 0,
@@ -208,20 +206,20 @@ export default {
   };
 
   // GUI
-  gui.add(parameters, "width").min(100).max(500).step(1).onChange(modifyPlane);
-  gui.add(parameters, "height").min(100).max(500).step(1).onChange(modifyPlane);
-  gui
-    .add(parameters, "widthSegments")
-    .min(25)
-    .max(100)
-    .step(1)
-    .onChange(modifyPlane);
-  gui
-    .add(parameters, "heightSegments")
-    .min(25)
-    .max(100)
-    .step(1)
-    .onChange(modifyPlane);
+  // gui.add(parameters, "width").min(100).max(500).step(1).onChange(modifyPlane);
+  // gui.add(parameters, "height").min(100).max(500).step(1).onChange(modifyPlane);
+  // gui
+  //   .add(parameters, "widthSegments")
+  //   .min(25)
+  //   .max(100)
+  //   .step(1)
+  //   .onChange(modifyPlane);
+  // gui
+  //   .add(parameters, "heightSegments")
+  //   .min(25)
+  //   .max(100)
+  //   .step(1)
+  //   .onChange(modifyPlane);
 
   // gui.addColor(hoverColor, "r");
   // gui.addColor(hoverColor, "g");
@@ -389,8 +387,8 @@ export default {
       duration: 1,
       delay: 2,
       onComplete: () => {
-        window.open("https://www.youtube.com/watch?v=uYuBJtMJIKU", "_blank");
-        // this.$router.push('/work')
+        // window.open("https://www.youtube.com/watch?v=uYuBJtMJIKU", "_blank");
+        this.$router.push('/work')
       },
     });
   });
